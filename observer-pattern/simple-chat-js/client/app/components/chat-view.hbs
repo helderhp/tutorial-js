@@ -1,0 +1,13 @@
+<div class="chat-view">
+    <div class="chat">
+        <div class="chat-messages">
+            {{#each this.chatService.messages as |message|}}
+                <div class={{if message.received "message" "message sended"}}>
+                    <p>{{message.userName}}</p>
+                    <p>{{message.message}}</p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <Input class="message-input" @value={{this.newMessage}} @enter={{this.sendMessage}}/>
+</div>

@@ -1,0 +1,30 @@
+.chat {
+    flex: 1;
+    height: auto;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+
+    .message-body {
+        flex: 1;
+        background-color: black;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px;
+        overflow: auto;
+
+        .box {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .message-input {
+        height: 30px;
+        width: 100%;
+        align-self: flex-end;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+}
